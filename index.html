@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce app demo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="filters">
+            <div class="allTab" onclick="efilter('All')">All</div>
+            <div class="menTab" onclick="efilter('Skin Care')">Skin Care</div>
+            <div class="womenTab" onclick="efilter('Hair Care')">Hair Care</div>
+            <div class="electronicsTab" onclick="efilter('Fragrance')">Fragrance</div>
+        </div>
+        <div id="card-container">
+            <div class="card-section" id="content">
+
+            </div>
+        </div>
+
+        <div class="button-section">
+            <button class="primary-btn" onclick="newitem()">Add new</button>
+            <button class="danger-btn" onclick="deleteitem()">Delete old stock</button>
+        </div>
+    </div>
+</body>
+<script src="ecommerce.js"></script>
+</html>
